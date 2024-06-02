@@ -8,7 +8,8 @@ const app =express()
 app.use(cors())
 app.use(express.json())
 
-mongoose.connect('mongodb://127.0.0.1:27017/test')
+// mongoose.connect('mongodb://127.0.0.1:27017/test')
+mongoose.connect('mongodb+srv://samithanilakshanasandaruwan:gvMmtqTxOCZW7iPH@cluster0.emmx824.mongodb.net/test')
 
 app.get('/get' ,(req ,res)=>{
     TodoModel.find()
